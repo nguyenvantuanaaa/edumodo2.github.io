@@ -1,5 +1,25 @@
+
+/* varialbe */
+:root{
+    --primary-color: #43cb83;
+    --white-color: #ffffff;
+
+    /* text color */
+    --title-text-color: #000000;
+    --desc-color: #bdc5c9;
+
+
+    /* height */
+    --menu-height: 13.5rem;
+
+    /* font */
+    --font-title:4rem;
+    --font-desc:1.8rem;
+}
+
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; 
+    /* 10px */
     box-sizing: border-box;
 }
 
@@ -12,8 +32,9 @@ body {
 }
 
 .container{
-    max-width: 1140px;
+    max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 /* header */
 .header__main{
@@ -86,7 +107,7 @@ body {
     font-size: 16px;
     margin: 30px 0px;
     line-height: 16px;
-    color: #43cb83;
+    color: var(--primary-color);
     width: 450px;
 }
 
