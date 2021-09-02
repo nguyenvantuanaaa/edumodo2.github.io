@@ -1,0 +1,79 @@
+@media screen and (max-width: 767px) {
+    /* <!-- headerblock --> */
+    .header__menu{
+        position: absolute;
+        background: #fff9f3;
+        height: 100vh;
+        width: 20rem;
+        top: 0;
+        right: -20rem;
+        text-align: left;
+        z-index: 2;
+        display: block;
+        transition: 1s;
+    }
+    .header__menu-item{
+        margin-left: 0;
+    }
+    .header__menu-link{
+        margin: 5rem 5rem;
+        display: block;
+    }
+    .ml{
+        margin-left: 4rem;
+    }
+    .header .fas{
+        display: block;
+        color: rgb(197, 28, 70);
+        margin: 1rem;
+        font-size: 2.2rem;
+        cursor: pointer;
+    }
+    /* <!-- banner block --> */
+    .banner {
+        height: 70rem;
+    }
+    .block__content-title{
+        font-size: 2.6rem;
+    }
+    .block__content-desc{
+        font-size: 1.3rem;
+    }
+    .block__content{
+        width: 90%;
+        top: 30%;
+    }
+    /* <!-- our block --> */
+    .our__heading{
+        width: 100%;
+    }
+    .our__education{
+        display: block;
+    }
+    /* <!-- content block --> */
+    #content > img{
+        display: none;
+    }
+    .content{
+        display: block;
+    }
+    .content__backgr-school-img{
+        max-width: 100%;
+    }
+    .content__backgr::before{
+        display: none;
+    }
+    /* <!-- around block --> */
+
+    /* <!-- footer --> */
+    footer{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
