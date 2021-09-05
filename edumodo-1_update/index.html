@@ -20,30 +20,34 @@
                         <a href=""><img src="./img/Logo.png" class="header__logo-img" alt="Logo"></a>
                     </div>     
                     <ul class="header__menu" id="headerMenu">
-                        <i class="fas fa-times" onclick="hideMenu()"></i>
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">Study</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">About Us</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">Admmission</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">Pages</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">News</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">Contact</a>
-                        </li>
-                        <div class="header__btn ml">
-                            <a href="#" class="header__btn-apply">Apply Now</a>
+                        <i class="fas fa-times close-menu" onclick="hideMenu()"></i>
+                        <div class="block-menu">
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">Study</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">About Us</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">Admmission</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">Pages</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">News</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">Contact</a>
+                            </li>
+                            <div class="header__btn ml">
+                                <a href="#" class="header__btn-apply">Apply Now</a>
+                            </div>
                         </div>
+                        
+                        
                     </ul>
-                    <i class="fas fa-bars" onclick="showMenu()"></i>
+                    <i class="fas fa-bars toggle-menu" onclick="showMenu()"></i>
                 </div>
 
             </header>
@@ -99,10 +103,11 @@
                     <div class="content__backgr">
                         <div class="content__backgr-school">
                             <img class="content__backgr-school-img" src="img/vadim-sherbakov-194-unsplash.png" alt="">
+                            <i class="far fa-play-circle content__backgr-icon"></i>
                         </div>
-                        <div class="content__backgr-icon">
-                           <i class="far fa-play-circle content__backgr-icon"></i>
-                        </div>
+                        <!-- <div class="content__backgr-icon">
+                           
+                        </div> -->
                     </div>
                     <div class="content__intro">
                         <p class="content__intro-title">Limitless learning, more possibilities</p>
@@ -267,15 +272,19 @@
     </div>
     <!----------------------- javascript ------------------------------>
 <script>
-    var headerMenu = document.getElementById("headerMenu");
+    const headerMenu = document.querySelector(".header__menu");
+    const toggleMenu = document.querySelector(".toggle-menu");
+    const closeMenu = document.querySelector(".close-menu")
+    const isOpen = "is-open";
 
-    function showMenu(){
-        headerMenu.style.right = "0";
-    }
-    function hideMenu(){
-        headerMenu.style.right = "-20rem";
-    }
-
+    toggleMenu.addEventListener("click",function(){
+        headerMenu.classList.add(isOpen);
+    })
+    closeMenu.addEventListener("click",function(){
+        headerMenu.classList.remove(isOpen)
+    })
+    
+    
 </script>
 
 

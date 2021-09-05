@@ -66,6 +66,10 @@ body {
     display: flex;
     align-self: center;
 }
+.block-menu{
+    display: flex;
+    align-self: center;
+}
 
 .header__menu-item{
     margin-left: 5rem;
@@ -149,14 +153,19 @@ body {
 }
 /* ========================== couser block ========================= */
 .our__education{
+    --spacing: 3rem;
+    --colum: 3;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     margin-bottom: 10rem;
+    margin-left: calc(-1 * var(--spacing));
 }
 .our__education-item{
-    width: 36rem;
-    height: 43rem;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+    width: calc(calc(100% / var(--colum)) - var(--spacing));
 }
 .our__education-item--red{
     background: #f9703a;;
@@ -178,6 +187,7 @@ body {
 .our__education-item-title{
     font-size: 3rem;
     color: white;
+    margin-bottom: 8rem;
 }
 /* ========================== content block ========================= */
 #content{
@@ -192,8 +202,6 @@ body {
     display: flex;
 }
 .content__backgr{
-    position: relative;
-    z-index: -1;
     margin-right: 7rem;
 }
 .content__backgr::before{
@@ -206,6 +214,7 @@ body {
     transform: translate(-45%, 13%);
 }
 .content__backgr-school{
+    position: relative;
     background: white;
     border-radius: 100%;
 }
@@ -281,22 +290,40 @@ body {
     margin-bottom: 11rem;
 }
 .product__list{
+    --spacing: 3rem;
+    --colum: 4;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    margin-left: calc(-1 * var(--spacing));
 }
 .product__list-item{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width:26.5rem;
-    height: 31rem;
-    margin-bottom: 3rem;
+    width: calc(calc(100% / var(--colum)) - var(--spacing));
+    margin-bottom: var(--spacing);
+    margin-left: var(--spacing);
     border-radius: 0.5rem;
 }
+.product__list-item img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
 .product__content{
- padding: 2rem 1.6rem;
- background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 16rem);
+    padding: 2rem;
+    background: white;
 }
 .product__content-title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 1.6rem;
     line-height: 1.2;
     margin-bottom: 1rem;

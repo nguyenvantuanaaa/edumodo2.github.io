@@ -1,79 +1,200 @@
 @media screen and (max-width: 767px) {
-    /* <!-- headerblock --> */
-    .header__menu{
-        position: absolute;
-        background: #fff9f3;
-        height: 100vh;
-        width: 20rem;
-        top: 0;
-        right: -20rem;
-        text-align: left;
-        z-index: 2;
-        display: block;
-        transition: 1s;
-    }
-    .header__menu-item{
-        margin-left: 0;
-    }
-    .header__menu-link{
-        margin: 5rem 5rem;
-        display: block;
-    }
-    .ml{
-        margin-left: 4rem;
-    }
-    .header .fas{
-        display: block;
-        color: rgb(197, 28, 70);
-        margin: 1rem;
-        font-size: 2.2rem;
-        cursor: pointer;
-    }
-    /* <!-- banner block --> */
-    .banner {
-        height: 70rem;
-    }
-    .block__content-title{
-        font-size: 2.6rem;
-    }
-    .block__content-desc{
-        font-size: 1.3rem;
-    }
-    .block__content{
-        width: 90%;
-        top: 30%;
-    }
-    /* <!-- our block --> */
-    .our__heading{
-        width: 100%;
-    }
-    .our__education{
-        display: block;
-    }
-    /* <!-- content block --> */
-    #content > img{
-        display: none;
-    }
-    .content{
-        display: block;
-    }
-    .content__backgr-school-img{
-        max-width: 100%;
-    }
-    .content__backgr::before{
-        display: none;
-    }
-    /* <!-- around block --> */
+  /* <!-- headerblock --> */
+  .header__menu {
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    align-items: center;
+    width: 300px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    bottom: 0;
+    background: #fff9f3;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: all 0.2s linear;
+  }
+  .header__menu.is-open {
+    transform: translateX(0);
+  }
+  .header__menu:not(.close-menu) {
+    align-items: flex-start;
+  }
+  .header__menu-item {
+    margin-left: 0;
+  }
+  .header__menu-link {
+    margin: 3rem 5rem;
+    display: block;
+    text-align: center;
+  }
+  .block-menu {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .ml {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .header .fas {
+    display: block;
+    color: rgb(197, 28, 70);
+    margin: 3rem;
+    font-size: 2.2rem;
+    cursor: pointer;
+  }
+  .header .close-menu {
+    margin: 6rem 2rem 0;
+  }
+  /* <!-- banner block --> */
+  .banner {
+    height: 70rem;
+  }
+  .block__content-title {
+    font-size: 2.6rem;
+  }
+  .block__content-desc {
+    font-size: 1.3rem;
+  }
+  .block__content {
+    width: 90%;
+    top: 30%;
+  }
+  /* <!-- our block --> */
+  .our__heading {
+    width: 100%;
+  }
+  .our__education {
+    --spacing: 1rem;
+    --colum: 1rem;
+    margin-bottom: 5rem;
+  }
+  .our__education-item {
+    width: 100%;
+    margin-bottom: 3rem;
+    height: 36rem;
+  }
+  .our__education-item-img {
+    width: 100%;
+  }
+  
+  /* <!-- content block --> */
+  #content > img {
+    display: none;
+  }
+  .content {
+    display: block;
+  }
+  .content__intro {
+    margin-top: 3rem;
+  }
+  .content__backgr-school-img {
+    max-width: 100%;
+  }
+  .content__backgr::before {
+    display: none;
+  }
+  .content__backgr-icon {
+    font-size: 5rem;
+    transform: translate(15%, -50%);
+  }
+  .content__intro-title,
+  .content__intro-more-item h2 {
+    font-size: 2.5rem;
+  }
+  .content__intro-decs,
+  .content__intro-more-item p {
+    font-size: 1.4rem;
+  }
+  /* <!-- around block --> */
+  .product > .product__img {
+    display: none;
+  }
+  .product::before {
+    display: none;
+  }
+  .product__list-item {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .product__list-item img {
+    width: 100%;
+  }
+  .product__heading {
+    margin: 8rem 0;
+  }
+  /* <!-- footer --> */
+  .footer {
+    margin-top: 0;
+  }
+  .footer__list {
+    display: block;
+  }
+  .footer__item-logo img {
+    margin-top: 4rem;
+  }
+  .footer__form__email {
+    margin-bottom: 4rem;
+  }
+  .mt-50,
+  .mt-30,
+  .footer__member {
+    margin-top: 4rem;
+  }
+}
 
-    /* <!-- footer --> */
-    footer{
-        display: none;
-    }
+@media screen and (max-width: 768px) {
+  .header__menu-item {
+    margin-left: 2rem;
+  }
+  .ml {
+  margin-left: 2rem;
+  }
+  .block__content {
+    width: 50%;
+  }
+  .our__education-item{
+    align-items: inherit;
+  }
+  .our__education-item-title{
+    font-size: 2rem;
+    text-align: center;
+  }
+  #content > img{
+    display: none;
+  }
+  .content{
+    display: block;
+  }
+  .content__backgr{
+    margin-right: 0;
+    text-align: center;
+  }
+  .product__content-decs{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .content__backgr::before{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content__backgr::before{
+    display: none;
+  }
 
 }
 
-@media screen and (min-width: 768px) {
-}
+/* < 767 */
+/* display block */
 
-@media screen and (min-width: 1024px) {
-}
+/* 768 up */
+
+/* 1024 up */
