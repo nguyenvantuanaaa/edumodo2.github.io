@@ -1,0 +1,49 @@
+/* gooogle font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  /* width all page */
+  --wrapper: 1920px;
+  --container: 1170px;
+
+  /* font */
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+
+  /* color */
+
+  /* color for text */
+  --title-color: #000000;
+  --desc-color: #eeeeee;
+
+  /* height */
+  --footer-height: 500px;
+}
+
+html {
+  font-size: 62.5%;
+  /* 62.5% = 10px */
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1;
+  font-family: var(--font-primary);
+}
+
+/* ========================== header block ========================= */
+
+/* ========================== banner block ========================= */
+
+/* ========================== out block ========================= */
+
+/* ========================== couser block ========================= */
+
+/* ========================== footer block ========================= */
