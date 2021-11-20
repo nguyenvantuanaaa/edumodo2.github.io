@@ -113,7 +113,7 @@ body {
 
 /* banner */
 .banner {
-    background: url(/img/bg.png) no-repeat;
+    background: url(../img/bg.png)no-repeat center/cover;
     height: 560px;
 
 }
