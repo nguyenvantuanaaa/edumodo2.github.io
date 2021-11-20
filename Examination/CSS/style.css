@@ -1,0 +1,356 @@
+/* gg font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* width all page */
+    --wrapper: 1440px;
+    --container: 1140px;
+
+    /* font */
+    --font-primary: 'Mulish', sans-serif;
+    /* color */
+    --primary-color: #3C64B1;
+    --secondary-color: #ffffff;
+    /* color for text */
+    --title-color: #373F41;
+    --heading-color:#737B7D;
+    /* font size */
+    --size-44: 4.4rem;
+    --size-36: 3.6rem;
+    --size-32: 3.2rem;
+    --size-18: 1.8rem;
+    --size-16: 1.6rem;
+    --size-14: 1.4rem;
+    --size-12: 1.2rem;
+}
+
+/* class chung */
+.btn{
+    font-size: var(--size-14);
+    font-weight: bold;
+    display: inline-block;
+}
+.btn--primary{
+    padding: 12px 18px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    
+}
+.btn--secondary{
+    color: var(--primary-color);
+    padding: 12px 0px;
+    margin-right: 20px;
+    width: 43px;
+    height: 42px;
+}
+
+.btn--width-106 {
+    width: 106px;
+    height: 42px;
+}
+
+.btn--width-136 {
+    width: 136px;
+    height: 42px;
+}
+
+.btn--boder{
+    padding: 12px 18px;
+    border: 1px solid #3C64B1;
+    color: var(--primary-color);
+    margin-left: 24px;
+    width: 115px;
+    height: 42px;
+}
+/* code */
+body {
+    font-size: 1.4rem;
+    line-height: 1;
+    font-family: var(--font-primary);
+}
+
+.wrapper {
+    max-width: var(--wrapper);
+    margin: 0 auto;
+}
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* header */
+.header {
+    background-color: rgba(3C64B1, C4C4C4,);
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+    height: 88px;
+    
+}
+
+.header__logo {
+    margin-right: 373.5px;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__log{
+    margin-left: auto;
+}
+
+.header__menu-item{
+    margin-right: 32px;
+}
+
+.header__menu-link {
+    font-size: var(--size-14);
+    color: var(--title-color);
+}
+
+/* banner */
+.banner {
+    background: url(/img/bg.png) no-repeat;
+    height: 560px;
+
+}
+
+.banner__inner {
+    padding: 137px 190px;
+}
+
+.banner__form {
+    width: 730px;
+}
+
+.banner__title {
+    font-weight: bold;
+    font-size: var(--size-44);
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--title-color);
+}
+
+.banner__heading{
+    font-size: var(--size-16);
+    line-height: 22px;
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 56px;
+    font-weight: 400;
+}
+
+.banner__btn {
+    text-align: center;
+}
+
+/* better */
+.better__inner {
+    margin-top: 60px;
+}
+
+.better__title {
+    font-weight: 700;
+    font-size: var(--size-32);
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--title-color);
+}
+
+.better__heading {
+    font-size: var(--size-16);
+    color: var(--heading-color);
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+/* discover */
+.discover__inner {
+    display: flex;
+    align-items: center;
+    --spacing: 3rem;
+    --colum: 3;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+    text-align: center;
+}
+
+.discover__box {
+    width: 350px;
+    height: 204px;
+    margin-left: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover__box-img {
+    margin-bottom: 24px;
+    height: 40px;
+    width: 40px;
+}
+
+.discover__box-title {
+    font-size: var(--size-18);
+    color: var(--title-color-color);
+    line-height: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.discover__box-heading {
+    font-size: var(--size-14);
+    color: var(--heading-color);
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 34px;
+}
+
+.discover__box-more {
+    font-size: var(--size-14);
+    color: var(--primary-color);
+    line-height: 18px;
+    font-weight: 700;
+}
+
+/* main */
+.main__inner {
+    margin-top: 92px;
+}
+.main__box {
+    display: flex;
+    align-items: center;
+}
+.main__box{
+    margin-bottom: 80px;
+}
+.main__box-img {
+    width: 540px;
+    height: 440px;
+}
+
+.main__children {
+    margin-left: 30px;
+    width: 540px;
+}
+
+.main__children-title {
+    font-size: var(--size-32);
+    line-height: 40px;
+    font-weight: bold;
+    color: var(--title-color);
+    margin-bottom: 32px;
+}
+
+.main__children-heading {
+    font-size: var(--size-16);
+    line-height: 22px;
+    color: var(--heading-color);
+    margin-bottom: 56px;
+}
+
+.main__children-form {
+    margin-bottom: 16px;
+}
+
+.children-form-input {
+    width: 377px;
+    height: 42px;
+    background: #F4F5F4;
+    list-style: none;
+    border: none;
+}
+
+.children-form-btn {
+    margin-left: 20px;
+    width: 139px;
+    height: 42px;
+    padding: 12px 18px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+}
+
+.main__children-more {
+    font-size: var(--size-12);
+    font-weight: 600;
+    line-height: 16px;
+    color: #737B7D;
+}
+
+.main__children2 {
+    width: 540px;
+    margin-right: 30px;
+}
+
+.main__children2-title{
+    font-weight: 700;
+    font-size: var(--size-32);
+    line-height: 40px;
+    color: var(--title-color);
+    margin-bottom: 56px;
+}
+
+.main__ship {
+    display: flex;
+}
+
+.main__susci {
+    width: 255px;
+
+}
+.main__susci:first-child {
+    margin-right: 30px;
+}
+
+.main__susci-img {
+    margin-bottom: 16px;
+}
+
+.main__susci-heading {
+    font-weight: 400;
+    font-size: var(--size-16);
+    line-height: 22px;
+    color: var(--heading-color);
+}
+
+/* list */
+.list__inner {
+    display: flex;
+    --spacing: 3rem;
+    --colum: 4;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+}
+
+.list__item {
+    margin-left: var(--spacing);
+    width: 255px;
+    text-align: center;
+}
+
+.list__item-img {
+    margin-bottom: 32px;
+}
+
+.list__item-title {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: var(--size-18);
+    line-height: 24px;
+    color: var(--title-color);
+}
+
+.list__item-heading {
+    font-size: var(--size-14);
+    line-height: 20px;
+    color: var(--heading-color);
+    margin-bottom: 95px;
+}
