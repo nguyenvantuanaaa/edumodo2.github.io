@@ -231,6 +231,7 @@ body {
 .main__box {
     display: flex;
     align-items: center;
+    margin-bottom: 107px;
 }
 .main__box2{
     display: flex;
