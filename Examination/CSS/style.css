@@ -110,6 +110,10 @@ body {
     font-size: var(--size-14);
     color: var(--title-color);
 }
+.close-menu,
+.toggle-menu{
+    display: none;
+}
 
 /* banner */
 .banner {
@@ -119,7 +123,7 @@ body {
 }
 
 .banner__inner {
-    padding: 137px 190px;
+    padding: 136px 190px;
 }
 
 .banner__form {
@@ -222,14 +226,17 @@ body {
 /* main */
 .main__inner {
     margin-top: 92px;
+    margin-bottom: 82px;
 }
 .main__box {
     display: flex;
     align-items: center;
 }
-.main__box{
-    margin-bottom: 80px;
+.main__box2{
+    display: flex;
+    align-items: center;
 }
+
 .main__box-img {
     width: 540px;
     height: 440px;
@@ -271,7 +278,6 @@ body {
     margin-left: 20px;
     width: 139px;
     height: 42px;
-    padding: 12px 18px;
     background: var(--primary-color);
     color: var(--secondary-color);
     border: none;

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     <title>Frontend-Examination</title>
 </head>
 <body>
@@ -19,6 +21,7 @@
                         <img src="./img/logo.png" alt="" class="header__logo-img">
                     </a>
                     <ul class="header__menu">
+                        <i class="fas fa-times close-menu"></i>
                         <li class="header__menu-item">
                             <a href="#" class="header__menu-link">Features</a>
                         </li>
@@ -33,6 +36,7 @@
                         <a href="" class="btn btn--secondary">Login</a>
                         <a href="" class="btn btn--primary btn--width-106">Start now</a>
                     </div>
+                    <i class="fas fa-bars toggle-menu"></i>
                 </div>
             </div>
         </header>
@@ -111,7 +115,7 @@
                         </div>
                     </div>
 
-                    <div class="main__box">
+                    <div class="main__box2">
                         <div class="main__children2">
                             <h2 class="main__children2-title">Fostering creativity and innovationeam definiebas reformidans, exerci persecuti</h2>
                             <div class="main__ship">
@@ -164,5 +168,21 @@
             </div>
         </section>
     </div>
+
+    <script>
+        const headerMenu = document.querySelector(".header__menu");
+        const toggleMenu = document.querySelector(".toggle-menu");
+        const closeMenu = document.querySelector(".close-menu")
+        const isOpen = "is-open";
+    
+        toggleMenu.addEventListener("click",function(){
+            headerMenu.classList.add(isOpen);
+        })
+        closeMenu.addEventListener("click",function(){
+            headerMenu.classList.remove(isOpen)
+        })
+        
+        
+    </script>
 </body>
 </html>

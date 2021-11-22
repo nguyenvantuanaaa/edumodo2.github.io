@@ -1,0 +1,212 @@
+@media only screen and (max-width: 739px) {
+    .header {
+        /* position: fixed;
+        z-index: ; */
+    }
+    .header__menu {
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        transform: translateX(100%);
+        transition: all 0.2s linear;
+    }
+    .header__menu.is-open{
+        transform: translateX(0);
+    }
+    .close-menu,
+    .toggle-menu{
+        display: block;
+        font-size: 35px;
+        color: #3C64B1;
+    }
+    .toggle-menu{
+        margin-right: 15px;
+        margin-left: auto;
+    }
+    .close-menu{
+        margin-right: 130px;
+        padding: 27px;
+        opacity: 0.5;
+    }
+    .header__logo {
+        margin-right: 0;
+        flex: 1;
+    }
+    .btn--secondary {
+        margin-right: 0;
+    }
+    .header__log {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .header__menu-item {
+        margin-bottom: 30px;
+    }
+    /* banner */
+    .banner {
+        height: 350px;
+    }
+    .banner__inner {
+        padding: 30px 0;
+    }
+    .banner__title {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+    .banner__form {
+        width: 100%;
+    }
+    .banner__heading {
+        margin-bottom: 20px;
+    }
+    /* discover */
+    .discover__box {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    /* main */
+    .main__inner {
+        margin-top: 60px;
+    }
+    .main__box {
+        flex-direction: column;
+
+    }
+    .main__box-img {
+        width: initial;
+        height: initial;
+        margin-bottom: 30px;
+    }
+    .main__children {
+        width: 100%;
+        margin-left: 0;
+    }
+    .main__children-title,
+    .main__children2-title {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+    .main__children-heading {
+        margin-bottom: 30px;
+    }
+    .children-form-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .children-form-btn {
+        margin-left: 0;
+        max-width: 120px;
+    }
+    .main__children-more {
+        margin-bottom: 60px;
+    }
+
+    .main__box2 {
+        flex-direction: column-reverse;
+    }
+    .main__children2 {
+        width: 100%;
+        margin-right: 0;
+    }
+    .list__inner {
+        --spacing: 0rem;
+        --colum: 1;
+        justify-content: center;
+    }
+    .list__item-heading{ 
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 740px)and (max-width: 1023px) {
+    .header__logo {
+        margin-right: 180px;
+    }
+    .banner__inner{
+        padding: 136px 0px;
+    }
+    .banner__form {
+        width: initial;
+    }
+    .better__heading  {
+        margin-bottom: 92px;
+    }
+    .discover__box{
+        width: calc(100% /3);
+    }
+    .discover__inner {
+        --spacing: 0px
+    }
+    .main__box {
+        flex-direction: column;
+        align-items: unset;
+    }
+    .main__box-img {
+        width: initial;
+        height: initial;
+        margin-bottom: 30px;
+    }
+    .main__children,
+    .main__children2 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .main__children-heading {
+        margin-bottom: 30px;
+    }
+    .main__children-more {
+        margin-bottom: 60px;
+    }
+    .main__box2 {
+        flex-direction: column-reverse;
+        align-items: unset;
+    }
+    .main__ship {
+    justify-content: space-around;
+    }
+    .list__inner {
+        --colum: 2;
+    justify-content: space-around;
+
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1140px) {
+    .banner__inner {
+        padding: 137px 137px;
+    }
+    .discover__box {
+        width: calc(100% / 3);
+    }
+    .discover__inner {
+        --spacing: 0
+    }
+    .children-form-input {
+        width: 222px;
+    }
+    .main__children-heading {
+        margin-bottom: 30px;
+    }
+    .main__box {
+        margin-bottom: 60px;
+    }
+    .main__children2,
+    .main__children {
+        width: 40%;
+    }
+    .main__box-img {
+        width: 60%;
+    }
+    .list__item {
+        width: 226px;
+    }
+}
